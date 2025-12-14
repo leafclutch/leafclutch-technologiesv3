@@ -6,36 +6,46 @@ import { Button } from "@/components/ui/button";
 
 const internships = [
   {
-    title: "Software Development Intern",
+    title: "Graphic Designer Internship",
     duration: "3-6 months",
-    type: "Paid",
-    description:
-      "Work on real-world projects, learn best practices, and contribute to production codebases.",
-    skills: ["Python/JavaScript", "Git", "Basic web development", "Problem-solving"],
+    type: "Unpaid and Remote",
+    description: "Work on real-world projects, learn best practices",
+    skills: ["Canva", "Color Topology", "Photoshop"],
   },
   {
-    title: "AI/ML Research Intern",
+    title: "Backend Developer Internship",
     duration: "3-6 months",
-    type: "Paid",
+    type: "Unpaid",
     description:
-      "Assist in developing and training machine learning models for various applications.",
-    skills: ["Python", "TensorFlow/PyTorch basics", "Statistics", "Data analysis"],
+      "Assist in the design, development, and maintenance of robust and scalable backend services and APIs. Work closely with the product and frontend teams to implement new features and optimize existing systems. Opportunity to work with modern microservices architecture and cloud technologies.",
+    skills: [
+      "Experience with relational or NoSQL databases (e.g., PostgreSQL, MongoDB)",
+      "Familiarity with RESTful APIs",
+      "Problem-solving and debugging skills",
+      "Basic understanding of version control (Git)",
+    ],
   },
+  // {
+  //   title: "Data Analytics Intern",
+  //   duration: "3-6 months",
+  //   type: "Paid/Unpaid",
+  //   description:
+  //     "Analyze datasets, create visualizations, and contribute to business intelligence projects.",
+  //   skills: ["SQL", "Excel/Sheets", "Python/R basics", "Data visualization"],
+  // },
   {
-    title: "Data Analytics Intern",
+    title: "Full Stack Developer Internship",
     duration: "3-6 months",
-    type: "Paid/Unpaid",
+    type: "Unpaid",
     description:
-      "Analyze datasets, create visualizations, and contribute to business intelligence projects.",
-    skills: ["SQL", "Excel/Sheets", "Python/R basics", "Data visualization"],
-  },
-  {
-    title: "DevOps Intern",
-    duration: "3-6 months",
-    type: "Paid",
-    description:
-      "Learn cloud infrastructure, CI/CD pipelines, and automation practices.",
-    skills: ["Linux basics", "Docker awareness", "Scripting", "Cloud fundamentals"],
+      "Contribute to the development of new features across the entire stack, from frontend user interfaces to backend APIs and database schemas. Work on real-world projects, fix bugs, and participate in code reviews to ensure high-quality, scalable applications.",
+    skills: [
+      "HTML, CSS, JavaScript",
+      "Familiarity with a frontend framework (e.g., React, Vue, Angular)",
+      "Experience with a backend framework (e.g., Node.js/Express, Django, Flask)",
+      "Database fundamentals (SQL or NoSQL)",
+      "Version control (Git)",
+    ],
   },
 ];
 
@@ -118,7 +128,9 @@ const Internship = () => {
             >
               <Code className="mx-auto mb-3 h-8 w-8 text-accent" />
               <h3 className="font-semibold text-foreground">Real Projects</h3>
-              <p className="text-sm text-muted-foreground">Hands-on Experience</p>
+              <p className="text-sm text-muted-foreground">
+                Hands-on Experience
+              </p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -129,7 +141,9 @@ const Internship = () => {
             >
               <Lightbulb className="mx-auto mb-3 h-8 w-8 text-accent" />
               <h3 className="font-semibold text-foreground">Skill Growth</h3>
-              <p className="text-sm text-muted-foreground">Continuous Learning</p>
+              <p className="text-sm text-muted-foreground">
+                Continuous Learning
+              </p>
             </motion.div>
           </div>
         </div>
@@ -226,7 +240,9 @@ const Internship = () => {
                   className="flex items-center gap-2"
                 >
                   <Check className="h-5 w-5 flex-shrink-0 text-accent" />
-                  <span className="text-sm text-muted-foreground">{benefit}</span>
+                  <span className="text-sm text-muted-foreground">
+                    {benefit}
+                  </span>
                 </motion.div>
               ))}
             </div>

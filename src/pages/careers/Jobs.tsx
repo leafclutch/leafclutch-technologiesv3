@@ -5,102 +5,102 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 const jobs = [
-  {
-    title: "Senior Software Engineer",
-    department: "Engineering",
-    location: "Remote / Hybrid",
-    type: "Full-time",
-    salary: "$90,000 - $130,000",
-    description:
-      "Lead development of complex software solutions, mentor junior developers, and contribute to architectural decisions.",
-    requirements: [
-      "5+ years of software development experience",
-      "Proficiency in Python, Java, or TypeScript",
-      "Experience with cloud platforms (AWS, GCP, Azure)",
-      "Strong problem-solving skills",
-      "Excellent communication abilities",
-    ],
-  },
-  {
-    title: "AI/ML Engineer",
-    department: "AI Team",
-    location: "Remote",
-    type: "Full-time",
-    salary: "$100,000 - $150,000",
-    description:
-      "Design and implement machine learning models, work on cutting-edge AI projects, and drive innovation in our AI solutions.",
-    requirements: [
-      "3+ years of ML/AI experience",
-      "Strong Python skills with TensorFlow or PyTorch",
-      "Experience with NLP or computer vision",
-      "Understanding of MLOps practices",
-      "PhD or Master's preferred",
-    ],
-  },
-  {
-    title: "DevOps Engineer",
-    department: "Infrastructure",
-    location: "Remote",
-    type: "Full-time",
-    salary: "$80,000 - $120,000",
-    description:
-      "Build and maintain CI/CD pipelines, manage cloud infrastructure, and ensure high availability of our systems.",
-    requirements: [
-      "3+ years of DevOps experience",
-      "Strong knowledge of Docker and Kubernetes",
-      "Experience with Terraform or Ansible",
-      "CI/CD pipeline expertise",
-      "Security best practices knowledge",
-    ],
-  },
-  {
-    title: "Frontend Developer",
-    department: "Engineering",
-    location: "Remote / Hybrid",
-    type: "Full-time",
-    salary: "$70,000 - $100,000",
-    description:
-      "Create beautiful, responsive user interfaces with React and TypeScript, collaborating with designers and backend teams.",
-    requirements: [
-      "3+ years of React experience",
-      "Strong TypeScript skills",
-      "Experience with modern CSS frameworks",
-      "Eye for design and UX",
-      "Testing experience (Jest, Cypress)",
-    ],
-  },
-  {
-    title: "Data Analyst",
-    department: "Data Team",
-    location: "Remote",
-    type: "Full-time",
-    salary: "$60,000 - $90,000",
-    description:
-      "Analyze complex datasets, create visualizations, and provide actionable insights to drive business decisions.",
-    requirements: [
-      "2+ years of data analysis experience",
-      "Proficiency in SQL and Python",
-      "Experience with BI tools (Power BI, Tableau)",
-      "Statistical analysis skills",
-      "Strong communication abilities",
-    ],
-  },
-  {
-    title: "Project Manager",
-    department: "Operations",
-    location: "Remote / Hybrid",
-    type: "Full-time",
-    salary: "$75,000 - $110,000",
-    description:
-      "Lead project teams, ensure timely delivery, and maintain strong client relationships throughout project lifecycles.",
-    requirements: [
-      "4+ years of project management experience",
-      "PMP or similar certification preferred",
-      "Experience with agile methodologies",
-      "Technical background preferred",
-      "Excellent stakeholder management",
-    ],
-  },
+  // {
+  //   title: "Senior Software Engineer",
+  //   department: "Engineering",
+  //   location: "Remote / Hybrid",
+  //   type: "Full-time",
+  //   salary: "$90,000 - $130,000",
+  //   description:
+  //     "Lead development of complex software solutions, mentor junior developers, and contribute to architectural decisions.",
+  //   requirements: [
+  //     "5+ years of software development experience",
+  //     "Proficiency in Python, Java, or TypeScript",
+  //     "Experience with cloud platforms (AWS, GCP, Azure)",
+  //     "Strong problem-solving skills",
+  //     "Excellent communication abilities",
+  //   ],
+  // },
+  // {
+  //   title: "AI/ML Engineer",
+  //   department: "AI Team",
+  //   location: "Remote",
+  //   type: "Full-time",
+  //   salary: "$100,000 - $150,000",
+  //   description:
+  //     "Design and implement machine learning models, work on cutting-edge AI projects, and drive innovation in our AI solutions.",
+  //   requirements: [
+  //     "3+ years of ML/AI experience",
+  //     "Strong Python skills with TensorFlow or PyTorch",
+  //     "Experience with NLP or computer vision",
+  //     "Understanding of MLOps practices",
+  //     "PhD or Master's preferred",
+  //   ],
+  // },
+  // {
+  //   title: "DevOps Engineer",
+  //   department: "Infrastructure",
+  //   location: "Remote",
+  //   type: "Full-time",
+  //   salary: "$80,000 - $120,000",
+  //   description:
+  //     "Build and maintain CI/CD pipelines, manage cloud infrastructure, and ensure high availability of our systems.",
+  //   requirements: [
+  //     "3+ years of DevOps experience",
+  //     "Strong knowledge of Docker and Kubernetes",
+  //     "Experience with Terraform or Ansible",
+  //     "CI/CD pipeline expertise",
+  //     "Security best practices knowledge",
+  //   ],
+  // },
+  // {
+  //   title: "Frontend Developer",
+  //   department: "Engineering",
+  //   location: "Remote / Hybrid",
+  //   type: "Full-time",
+  //   salary: "$70,000 - $100,000",
+  //   description:
+  //     "Create beautiful, responsive user interfaces with React and TypeScript, collaborating with designers and backend teams.",
+  //   requirements: [
+  //     "3+ years of React experience",
+  //     "Strong TypeScript skills",
+  //     "Experience with modern CSS frameworks",
+  //     "Eye for design and UX",
+  //     "Testing experience (Jest, Cypress)",
+  //   ],
+  // },
+  // {
+  //   title: "Data Analyst",
+  //   department: "Data Team",
+  //   location: "Remote",
+  //   type: "Full-time",
+  //   salary: "$60,000 - $90,000",
+  //   description:
+  //     "Analyze complex datasets, create visualizations, and provide actionable insights to drive business decisions.",
+  //   requirements: [
+  //     "2+ years of data analysis experience",
+  //     "Proficiency in SQL and Python",
+  //     "Experience with BI tools (Power BI, Tableau)",
+  //     "Statistical analysis skills",
+  //     "Strong communication abilities",
+  //   ],
+  // },
+  // {
+  //   title: "Project Manager",
+  //   department: "Operations",
+  //   location: "Remote / Hybrid",
+  //   type: "Full-time",
+  //   salary: "$75,000 - $110,000",
+  //   description:
+  //     "Lead project teams, ensure timely delivery, and maintain strong client relationships throughout project lifecycles.",
+  //   requirements: [
+  //     "4+ years of project management experience",
+  //     "PMP or similar certification preferred",
+  //     "Experience with agile methodologies",
+  //     "Technical background preferred",
+  //     "Excellent stakeholder management",
+  //   ],
+  // },
 ];
 
 const Jobs = () => {
@@ -115,7 +115,7 @@ const Jobs = () => {
               animate={{ opacity: 1 }}
               className="mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-accent"
             >
-              Open Positions
+              Hiring Only Interns
             </motion.span>
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
@@ -179,7 +179,9 @@ const Jobs = () => {
                       <Link to="/get-started">Apply Now</Link>
                     </Button>
                   </div>
-                  <p className="mb-4 text-muted-foreground">{job.description}</p>
+                  <p className="mb-4 text-muted-foreground">
+                    {job.description}
+                  </p>
                   <div>
                     <h4 className="mb-2 font-semibold text-foreground">
                       Requirements:
