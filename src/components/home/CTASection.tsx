@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight, Phone, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import qr from "@/assets/qr.png";
 
 export function CTASection() {
   return (
@@ -17,7 +18,7 @@ export function CTASection() {
           <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-highlight/20 blur-3xl" />
           <div className="absolute -bottom-20 -left-20 h-64 w-64 rounded-full bg-accent/20 blur-3xl" />
 
-          <div className="relative grid items-center gap-8 lg:grid-cols-2">
+<div className="relative grid items-center gap-8 md:grid-cols-2 lg:grid-cols-3">
             {/* Content */}
             <div className="text-center lg:text-left">
               <h2 className="mb-4 text-3xl font-bold text-primary-foreground md:text-4xl lg:text-5xl">
@@ -48,6 +49,14 @@ export function CTASection() {
                 </Button>
               </div>
             </div>
+
+
+           {/* QR */}
+           <img
+           src={qr}
+           alt="QR Code"
+          className="w-32 h-32 sm:w-40 sm:h-40 mx-auto rounded-lg shadow-md"
+            />
 
             {/* Contact Info */}
             <div className="flex flex-col gap-4 lg:items-end">

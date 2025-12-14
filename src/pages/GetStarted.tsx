@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
-
+import qr from "@/assets/qr.png";
 const GetStarted = () => {
   const { toast } = useToast();
   // 1. UPDATED STATE: Removed 'budget' field to match old logic
@@ -166,6 +166,15 @@ const GetStarted = () => {
                     </p>
                   </div>
                 </div>
+                 <h3 className="font-semibold text-foreground text-center pt-2">Discord QR</h3>
+                 <div className="flex items-start gap=4">
+
+                    <img
+                    src={qr}
+                    alt="QR Code"
+                    className="w-32 h-32 sm:w-40 sm:h-40 mx-auto rounded-lg shadow-md"
+                    />
+               </div>
               </div>
 
               {/* Quick Actions */}
