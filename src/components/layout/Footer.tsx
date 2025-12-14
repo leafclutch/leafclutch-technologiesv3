@@ -1,6 +1,16 @@
 import { Link } from "react-router-dom";
-import { Mail, Phone, MapPin, Linkedin, Twitter, Github } from "lucide-react";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Linkedin,
+  Twitter,
+  Github,
+  Instagram,
+  Facebook,
+} from "lucide-react";
 import logo from "@/assets/HD_logo_only_png.png";
+// import { FaXTwitter, FaDiscord } from "react-icons/fa6";
 
 const footerLinks = {
   company: [
@@ -60,6 +70,28 @@ export function Footer() {
               >
                 <Linkedin className="h-5 w-5" />
               </a>
+              <a
+                href="https://www.instagram.com/leafclutch.technologies/"
+                className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-foreground/10 transition-colors hover:bg-primary-foreground/20"
+                target="_blank"
+              >
+                <Instagram className="h-5 w-5" />
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61584902195796"
+                className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-foreground/10 transition-colors hover:bg-primary-foreground/20"
+                target="_blank"
+              >
+                <Facebook className="h-5 w-5" />
+              </a>
+              {/* <a
+                href="https://discord.gg/4aDwcMZBPq"
+                className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-foreground/10 transition-colors hover:bg-primary-foreground/20"
+                target="_blank"
+              >
+                <FaDiscord className="h-5 w-5" />
+              </a> */}
+
               {/* <a
                 href="#"
                 className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-foreground/10 transition-colors hover:bg-primary-foreground/20"

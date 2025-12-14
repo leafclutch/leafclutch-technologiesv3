@@ -86,21 +86,27 @@ export function WhyChooseUs() {
             >
               <div className="text-center">
                 <p className="text-3xl font-bold text-primary md:text-4xl">
-                  50+
+                  5+
                 </p>
-                <p className="text-sm text-muted-foreground">Projects Delivered</p>
+                <p className="text-sm text-muted-foreground">
+                  Projects Delivered
+                </p>
               </div>
               <div className="text-center">
                 <p className="text-3xl font-bold text-primary md:text-4xl">
-                  98%
+                  100%
                 </p>
-                <p className="text-sm text-muted-foreground">Client Satisfaction</p>
+                <p className="text-sm text-muted-foreground">
+                  Client Satisfaction
+                </p>
               </div>
               <div className="text-center">
                 <p className="text-3xl font-bold text-primary md:text-4xl">
                   24/7
                 </p>
-                <p className="text-sm text-muted-foreground">Support Available</p>
+                <p className="text-sm text-muted-foreground">
+                  Support Available
+                </p>
               </div>
             </motion.div>
           </div>
