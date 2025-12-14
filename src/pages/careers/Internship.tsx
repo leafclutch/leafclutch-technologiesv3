@@ -4,6 +4,8 @@ import { Clock, Users, Code, Lightbulb, ArrowRight, Check } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
+const GOOGLE_FORM_URL = "https://forms.gle/4YBqdUdRyrpTx5EF8"; // Added a constant for clarity
+
 const internships = [
   {
     title: "Graphic Designer Internship",
@@ -93,7 +95,7 @@ const Internship = () => {
           </div>
         </div>
       </section>
-
+      {/* --- */}
       {/* Program Overview */}
       <section className="section-padding bg-background">
         <div className="container-padding mx-auto max-w-7xl">
@@ -148,7 +150,7 @@ const Internship = () => {
           </div>
         </div>
       </section>
-
+      {/* --- */}
       {/* Available Internships */}
       <section className="section-padding bg-muted/50">
         <div className="container-padding mx-auto max-w-5xl">
@@ -189,7 +191,14 @@ const Internship = () => {
                     </div>
                   </div>
                   <Button asChild variant="hero">
-                    <Link to="/get-started">Apply Now</Link>
+                    {/* 👇 MODIFIED LINK HERE to redirect to the Google Form */}
+                    <Link
+                      to={GOOGLE_FORM_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Apply Now
+                    </Link>
                   </Button>
                 </div>
                 <p className="mb-4 text-muted-foreground">
@@ -215,7 +224,7 @@ const Internship = () => {
           </div>
         </div>
       </section>
-
+      {/* --- */}
       {/* Benefits */}
       <section className="section-padding bg-background">
         <div className="container-padding mx-auto max-w-5xl">
@@ -249,7 +258,7 @@ const Internship = () => {
           </div>
         </div>
       </section>
-
+      {/* --- */}
       {/* CTA */}
       <section className="section-padding bg-primary text-primary-foreground">
         <div className="container-padding mx-auto max-w-3xl text-center">
@@ -265,7 +274,12 @@ const Internship = () => {
             size="lg"
             className="bg-highlight text-primary hover:bg-highlight/90"
           >
-            <Link to="/get-started">
+            {/* 👇 MODIFIED LINK HERE to redirect to the Google Form */}
+            <Link
+              to={GOOGLE_FORM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Apply for Internship
               <ArrowRight className="h-5 w-5" />
             </Link>
