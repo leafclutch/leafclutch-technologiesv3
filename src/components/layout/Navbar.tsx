@@ -20,7 +20,7 @@ const navItems = [
       { name: "Training & Internship", path: "/careers/training" },
     ],
   },
-  { name: "Docs", path: "/docs" },
+  // { name: "Docs", path: "/docs" },
 ];
 
 export function Navbar() {

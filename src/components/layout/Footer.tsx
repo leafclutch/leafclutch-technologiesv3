@@ -10,7 +10,7 @@ import {
   Facebook,
 } from "lucide-react";
 import logo from "@/assets/HD_logo_only_png.png";
-// import { FaXTwitter, FaDiscord } from "react-icons/fa6";
+import { FaXTwitter, FaDiscord } from "react-icons/fa6";
 
 const footerLinks = {
   company: [
@@ -84,13 +84,13 @@ export function Footer() {
               >
                 <Facebook className="h-5 w-5" />
               </a>
-              {/* <a
+              <a
                 href="https://discord.gg/4aDwcMZBPq"
                 className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-foreground/10 transition-colors hover:bg-primary-foreground/20"
                 target="_blank"
               >
                 <FaDiscord className="h-5 w-5" />
-              </a> */}
+              </a>
 
               {/* <a
                 href="#"

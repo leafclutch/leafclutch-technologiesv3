@@ -1,38 +1,45 @@
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
-import { Briefcase, GraduationCap, Users, ArrowRight, MapPin, Clock } from "lucide-react";
+import {
+  Briefcase,
+  GraduationCap,
+  Users,
+  ArrowRight,
+  MapPin,
+  Clock,
+} from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 const openPositions = [
-  {
-    title: "Senior Software Engineer",
-    department: "Engineering",
-    location: "Remote / Hybrid",
-    type: "Full-time",
-    description: "Lead development of complex software solutions and mentor junior developers.",
-  },
-  {
-    title: "AI/ML Engineer",
-    department: "AI Team",
-    location: "Remote",
-    type: "Full-time",
-    description: "Design and implement machine learning models for client projects.",
-  },
-  {
-    title: "DevOps Engineer",
-    department: "Infrastructure",
-    location: "Remote",
-    type: "Full-time",
-    description: "Build and maintain CI/CD pipelines and cloud infrastructure.",
-  },
-  {
-    title: "Frontend Developer",
-    department: "Engineering",
-    location: "Remote / Hybrid",
-    type: "Full-time",
-    description: "Create beautiful, responsive user interfaces with React and TypeScript.",
-  },
+  // {
+  //   title: "Senior Software Engineer",
+  //   department: "Engineering",
+  //   location: "Remote / Hybrid",
+  //   type: "Full-time",
+  //   description: "Lead development of complex software solutions and mentor junior developers.",
+  // },
+  // {
+  //   title: "AI/ML Engineer",
+  //   department: "AI Team",
+  //   location: "Remote",
+  //   type: "Full-time",
+  //   description: "Design and implement machine learning models for client projects.",
+  // },
+  // {
+  //   title: "DevOps Engineer",
+  //   department: "Infrastructure",
+  //   location: "Remote",
+  //   type: "Full-time",
+  //   description: "Build and maintain CI/CD pipelines and cloud infrastructure.",
+  // },
+  // {
+  //   title: "Frontend Developer",
+  //   department: "Engineering",
+  //   location: "Remote / Hybrid",
+  //   type: "Full-time",
+  //   description: "Create beautiful, responsive user interfaces with React and TypeScript.",
+  // },
 ];
 
 const Careers = () => {
@@ -58,8 +65,7 @@ const Careers = () => {
               animate={{ opacity: 1, y: 0 }}
               className="mb-6 text-4xl font-bold text-foreground md:text-5xl lg:text-6xl"
             >
-              Join Our{" "}
-              <span className="gradient-text">Growing Team</span>
+              Join Our <span className="gradient-text">Growing Team</span>
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -67,8 +73,8 @@ const Careers = () => {
               transition={{ delay: 0.1 }}
               className="text-lg text-muted-foreground md:text-xl"
             >
-              Be part of a team that's shaping the future of technology. We offer
-              exciting opportunities for growth, learning, and impact.
+              Be part of a team that's shaping the future of technology. We
+              offer exciting opportunities for growth, learning, and impact.
             </motion.p>
           </div>
         </div>

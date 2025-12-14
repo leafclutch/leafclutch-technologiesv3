@@ -55,7 +55,7 @@ export function CTASection() {
 
             {/* Contact Info */}
             <div className="flex flex-col gap-4 lg:items-end">
-              <div className="flex items-center gap-4 rounded-xl bg-primary-foreground/10 p-4 backdrop-blur-sm">
+              {/* <div className="flex items-center gap-4 rounded-xl bg-primary-foreground/10 p-4 backdrop-blur-sm">
                 <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-highlight">
                   <Phone className="h-6 w-6 text-primary" />
                 </div>
@@ -67,7 +67,7 @@ export function CTASection() {
                     +977-9766722920
                   </p>
                 </div>
-              </div>
+              </div> */}
               <div className="flex items-center gap-4 rounded-xl bg-primary-foreground/10 p-4 backdrop-blur-sm">
                 <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-highlight">
                   <Mail className="h-6 w-6 text-primary" />

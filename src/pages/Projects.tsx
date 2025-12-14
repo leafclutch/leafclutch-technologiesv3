@@ -48,27 +48,27 @@ const projects = [
     // 🔥 Use the filename instead of a long URL
     imageName: "classyCafe.png",
   },
-  {
-    title: "Siddhartha Pathak Personal Portfolio",
-    category: "Personal Portfolio / Business Card Website",
-    description:
-      "Designed and developed a personal portfolio website for Siddhartha Pathak, a professional offering services in SEO, Web Analytics, Data Insights, and Web Development. The site serves as a professional online resume and a digital business card.",
-    technologies: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Mobile-First/Responsive Design",
-    ],
-    impact:
-      "Established a dedicated, professional online presence that clearly communicates the owner's expertise, services offered, and contact information, essential for personal branding and client acquisition.",
-    challenge:
-      "The goal was to create a clean, fast-loading, and easily navigable single-page website that effectively summarizes a diverse range of technical skills and services without overwhelming the visitor.",
-    solution:
-      "Delivered a highly optimized, responsive single-page design that uses clear headings and structured sections to present professional experience, skills, and services, ensuring high performance across all devices.",
-    url: "https://siddharthapathak.com.np/",
-    // 🔥 Use the filename instead of a long URL
-    imageName: "sidPortfolio.png",
-  },
+  // {
+  //   title: "Siddhartha Pathak Personal Portfolio",
+  //   category: "Personal Portfolio / Business Card Website",
+  //   description:
+  //     "Designed and developed a personal portfolio website for Siddhartha Pathak, a professional offering services in SEO, Web Analytics, Data Insights, and Web Development. The site serves as a professional online resume and a digital business card.",
+  //   technologies: [
+  //     "HTML",
+  //     "CSS",
+  //     "JavaScript",
+  //     "Mobile-First/Responsive Design",
+  //   ],
+  //   impact:
+  //     "Established a dedicated, professional online presence that clearly communicates the owner's expertise, services offered, and contact information, essential for personal branding and client acquisition.",
+  //   challenge:
+  //     "The goal was to create a clean, fast-loading, and easily navigable single-page website that effectively summarizes a diverse range of technical skills and services without overwhelming the visitor.",
+  //   solution:
+  //     "Delivered a highly optimized, responsive single-page design that uses clear headings and structured sections to present professional experience, skills, and services, ensuring high performance across all devices.",
+  //   url: "https://siddharthapathak.com.np/",
+  //   // 🔥 Use the filename instead of a long URL
+  //   imageName: "sidPortfolio.png",
+  // },
   // Add your 50+ other projects here, only needing the corresponding filename:
   // {
   //   title: "Example Project B",
