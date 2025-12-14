@@ -150,7 +150,6 @@ const GetStarted = () => {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  {/* Phone block was commented out, leaving it out to maintain original structure */}
                 </div>
 
                 <div className="flex items-start gap-4">
@@ -166,15 +165,27 @@ const GetStarted = () => {
                     </p>
                   </div>
                 </div>
-                 <h3 className="font-semibold text-foreground text-center pt-2">Discord QR</h3>
-                 <div className="flex items-start gap=4">
 
+                {/* QR Code and Discord Link */}
+                <div className="flex flex-col items-center gap-2 pt-2">
+                {/* QR Image */}
                     <img
-                    src={qr}
-                    alt="QR Code"
-                    className="w-32 h-32 sm:w-40 sm:h-40 mx-auto rounded-lg shadow-md"
-                    />
-               </div>
+                      src={qr}
+                       alt="QR Code"
+                       className="w-32 h-32 sm:w-40 sm:h-40 rounded-lg shadow-md"
+                     />
+
+                     {/* Discord Link below QR */}
+                    <a
+                   href="https://discord.gg/4aDwcMZBPq"
+                   className="text-blue-600 font-semibold hover:underline transition-colors"
+                    target="_blank"
+                     rel="noopener noreferrer"
+                     >
+                Join our Discord
+                     </a>
+                 </div>
+
               </div>
 
               {/* Quick Actions */}
