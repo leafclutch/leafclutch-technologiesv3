@@ -14,10 +14,11 @@ const internships = [
     description: "Work on real-world projects, learn best practices",
     skills: ["Canva", "Color Topology", "Photoshop"],
   },
+
   {
     title: "Backend Developer Internship",
     duration: "3-6 months",
-    type: "Unpaid",
+    type: "Unpaid and Remote",
     description:
       "Assist in the design, development, and maintenance of robust and scalable backend services and APIs. Work closely with the product and frontend teams to implement new features and optimize existing systems. Opportunity to work with modern microservices architecture and cloud technologies.",
     skills: [
@@ -27,18 +28,24 @@ const internships = [
       "Basic understanding of version control (Git)",
     ],
   },
-  // {
-  //   title: "Data Analytics Intern",
-  //   duration: "3-6 months",
-  //   type: "Paid/Unpaid",
-  //   description:
-  //     "Analyze datasets, create visualizations, and contribute to business intelligence projects.",
-  //   skills: ["SQL", "Excel/Sheets", "Python/R basics", "Data visualization"],
-  // },
+  {
+    title: "SEO Specialist Internship",
+    duration: "3-6 months",
+    type: "Unpaid and Remote",
+    description:
+      "Assist the marketing team in optimizing website content and structure for search engines to improve organic rankings and traffic. Responsibilities include keyword research, on-page optimization, content audits, and basic link-building efforts. You will gain hands-on experience with SEO tools and analytics.",
+    skills: [
+      "Basic understanding of SEO principles (On-page, Off-page, Technical)",
+      "Familiarity with Google Analytics and Google Search Console",
+      "Excellent research and analytical skills",
+      "Proficiency in written communication",
+      "Attention to detail for auditing website elements",
+    ],
+  },
   {
     title: "Full Stack Developer Internship",
     duration: "3-6 months",
-    type: "Unpaid",
+    type: "Unpaid and Remote",
     description:
       "Contribute to the development of new features across the entire stack, from frontend user interfaces to backend APIs and database schemas. Work on real-world projects, fix bugs, and participate in code reviews to ensure high-quality, scalable applications.",
     skills: [
