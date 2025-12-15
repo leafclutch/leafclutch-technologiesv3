@@ -410,21 +410,21 @@ const About = () => {
             </div>
           </div>
 
-          {/* <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center">
             <div className="relative w-56 h-56 mb-6 overflow-hidden">
               <img
-                src="https://media.licdn.com/dms/image/v2/D4E03AQF7ZXfkfPDFnw/profile-displayphoto-scale_400_400/B4EZjXSWgWHEAo-/0/1755958569752?e=1766620800&v=beta&t=r0CgsBJ83gvi26gPXPQx2hnYKEt94hjPZXiq-WXyGz4"
+                src="https://media.licdn.com/dms/image/v2/D4D03AQHG3REB4s4w8A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1728321693866?e=1767225600&v=beta&t=3X8hLIUbiUviE-xoEI7CzYMtbKfBE3eMH6sZpWvJVo8"
                 alt="member"
                 className="w-full h-full object-cover rounded-lg"
               />
             </div>
             <div className="text-center">
               <h3 className="text-xl font-semibold text-gray-900">
-                Michael Wacht
+                Saurya Chaudhary
               </h3>
-              <p className="text-gray-600 mb-2">AI Partner Incubator Manager</p>
+              <p className="text-gray-600 mb-2">Cyber security specialist</p>
               <a
-                href="https://www.linkedin.com/in/mwacht/"
+                href="https://www.linkedin.com/in/saurya-chaudhary-ab680b243/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center text-sm text-[#0077B5] hover:text-[#005582] transition-colors"
@@ -439,7 +439,7 @@ const About = () => {
                 LinkedIn
               </a>
             </div>
-          </div> */}
+          </div> 
 
           {/* <div className="flex flex-col items-center">
             <div className="relative w-56 h-56 mb-6 overflow-hidden">
