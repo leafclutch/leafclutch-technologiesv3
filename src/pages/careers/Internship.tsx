@@ -83,7 +83,6 @@ const Internship = () => {
           </div>
         </div>
       </section>
-
       {/* Program Overview */}
       <section className="section-padding bg-background">
         <div className="container-padding mx-auto max-w-7xl">
@@ -134,6 +133,15 @@ const Internship = () => {
           </div>
         </div>
       </section>
+
+              {/* intern team */}
+              <div className="flex justify-center mb-20">
+                <a href="http://localhost:8080/careers/interndetails" target="_blank">
+               <button className="inline-flex items-center justify-center gap-1 whitespace-nowrap transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-highlight text-primary shadow-lg hover:shadow-xl hover:-translate-y-1 font-bold border-2 border-highlight/50 h-12 rounded-lg px-8  text-base w-full">
+                Our Intern Team
+                </button>
+                </a>
+              </div>
 
       {/* Available Internships */}
       <section className="section-padding bg-muted/50">

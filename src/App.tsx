@@ -15,6 +15,7 @@ import Training from "./pages/careers/Training";
 import Docs from "./pages/Docs";
 import GetStarted from "./pages/GetStarted";
 import NotFound from "./pages/NotFound";
+import Interndetails from "./pages/careers/interndetails";
 
 const queryClient = new QueryClient();
 
@@ -37,6 +38,7 @@ const App = () => (
           <Route path="/docs" element={<Docs />} />
           <Route path="/get-started" element={<GetStarted />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/careers/interndetails" element={<Interndetails />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
