@@ -298,7 +298,7 @@ const About = () => {
               <h3 className="text-xl font-semibold text-gray-900">
                 Pawan Chaudhary
               </h3>
-              <p className="text-gray-600 mb-2">Technical Head & DevOps</p>
+              <p className="text-gray-600 mb-2">Technical & DevOps Head</p>
               <a
                 href="https://www.linkedin.com/in/pawan-cdhry/"
                 target="_blank"
