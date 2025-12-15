@@ -379,19 +379,21 @@ const About = () => {
             </div>
           </div>
 
-          {/* <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center">
             <div className="relative w-56 h-56 mb-6 overflow-hidden">
               <img
-                src="https://media.licdn.com/dms/image/v2/D5603AQF2RtYBpVlmRA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1692647225615?e=1766620800&v=beta&t=ft-TS6i5xn41tNPwgV495W1DbcOfoT7B9-Zb86jNNt0"
+                src="https://media.licdn.com/dms/image/v2/D5603AQGk44uYODSrgQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1722535962639?e=1766620800&v=beta&t=BsUpPDxiQU_ovOu7pCl3fGFolXfzRJgSISESpd3jGLQ"
                 alt="member"
                 className="w-full h-full object-cover rounded-lg"
               />
             </div>
             <div className="text-center">
-              <h3 className="text-xl font-semibold text-gray-900">Ishan</h3>
-              <p className="text-gray-600 mb-2">founding enginner</p>
+              <h3 className="text-xl font-semibold text-gray-900">
+                Siddhartha Pathak
+              </h3>
+              <p className="text-gray-600 mb-2">Data Science & AI</p>
               <a
-                href="https://www.linkedin.com/in/ishanbhargava1402/"
+                href="https://linkedin.com/in/siddharthapathak"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center text-sm text-[#0077B5] hover:text-[#005582] transition-colors"
@@ -406,7 +408,7 @@ const About = () => {
                 LinkedIn
               </a>
             </div>
-          </div> */}
+          </div>
 
           {/* <div className="flex flex-col items-center">
             <div className="relative w-56 h-56 mb-6 overflow-hidden">
