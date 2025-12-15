@@ -11,10 +11,30 @@ const internships = [
     title: "Graphic Designer Internship",
     duration: "3-6 months",
     type: "Unpaid and Remote",
-    description: "Work on real-world projects, learn best practices",
-    skills: ["Canva", "Color Topology", "Photoshop"],
+    description:
+      "Work on real-world projects, learn best practices, and contribute to our visual branding across various channels. You will be responsible for creating engaging designs, including social media banners, website assets, and marketing materials, utilizing tools like Canva, Photoshop, and other industry-standard software.",
+    skills: [
+      "Proficiency in Canva and Adobe Creative Suite (e.g., Photoshop, Illustrator)",
+      "Strong understanding of color topology, typography, and layout principles",
+      "Ability to design engaging social media content and banners",
+      "Attention to detail and a strong portfolio showing graphic design work",
+      "Familiarity with visual branding guidelines",
+    ],
   },
-
+  {
+    title: "Frontend Developer Internship",
+    duration: "3-6 months",
+    type: "Unpaid and Remote",
+    description:
+      "Join our team to build beautiful, intuitive, and high-performance user interfaces. You will work directly with our design and backend teams to translate mockups and wireframes into clean, modern web applications. This role offers hands-on experience with a modern component-based framework and the opportunity to contribute to a user-facing product from day one.",
+    skills: [
+      "HTML5, CSS3, and modern JavaScript (ES6+)",
+      "Familiarity with a major frontend library/framework (e.g., React, Vue, Angular)",
+      "Basic understanding of responsive design principles",
+      "Ability to convert designs into high-fidelity UI",
+      "Basic understanding of version control (Git)",
+    ],
+  },
   {
     title: "Backend Developer Internship",
     duration: "3-6 months",
@@ -54,6 +74,20 @@ const internships = [
       "Experience with a backend framework (e.g., Node.js/Express, Django, Flask)",
       "Database fundamentals (SQL or NoSQL)",
       "Version control (Git)",
+    ],
+  },
+  {
+    title: "Content Writer Internship",
+    duration: "3-6 months",
+    type: "Unpaid and Remote",
+    description:
+      "Contribute to our marketing and educational efforts by crafting engaging, high-quality content for our blog, website, and social media platforms. You will conduct research, optimize content for SEO, and work closely with the marketing team to align content with brand goals and audience needs. This is an excellent opportunity to build a professional writing portfolio.",
+    skills: [
+      "Excellent written and verbal communication skills",
+      "Basic understanding of SEO principles and keyword research",
+      "Familiarity with content management systems (e.g., WordPress) is a plus",
+      "Strong research and organizational skills",
+      "Ability to meet deadlines and manage multiple projects",
     ],
   },
 ];
