@@ -216,9 +216,9 @@ const interndetails = () => {
 
   <div className="text-center">
     <h3 className="text-xl font-semibold text-gray-900">Machel Watch</h3>
-    <p className="text-gray-600 mb-1 pt-1">Graphic Designer</p>
+    <p className="text-gray-600 mb-1 pt-1">Backend intern</p>
 
-    {/* Duration section */}
+    
     <p className="text-gray-600 mb-1">
        <span className="font-medium">Dec 15, 2025 - Till date</span>
     </p>
