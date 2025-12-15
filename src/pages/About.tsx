@@ -211,7 +211,7 @@ const About = () => {
               <h3 className="text-xl font-semibold text-gray-900">
                 Siddhartha Pathak
               </h3>
-              <p className="text-gray-600"> Co - Founder</p>
+              <p className="text-gray-600"> Co - Founder & CTO</p>
               <div className="flex justify-start gap-4 pt-3">
                 <a
                   href="https://mail.google.com/mail/?view=cm&fs=1&to=sid@leafclutch.dev"
@@ -254,7 +254,7 @@ const About = () => {
               <h3 className="text-xl font-semibold text-gray-900">
                 Shubham Kurmar Deo
               </h3>
-              <p className="text-gray-600"> Co - Founder</p>
+              <p className="text-gray-600"> Co - Founder & CEO</p>
               <div className="flex justify-start gap-4 pt-3">
                 <a
                   href="https://mail.google.com/mail/?view=cm&fs=1&to=shubham@leafclutch.dev"
