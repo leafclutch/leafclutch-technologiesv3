@@ -49,7 +49,7 @@ export function Footer() {
               </div> */}
               <img
                 src={logo}
-                alt="LeafClutch Technologies"
+                alt="Leafclutch Technologies"
                 className="h-12 w-15"
               />
 

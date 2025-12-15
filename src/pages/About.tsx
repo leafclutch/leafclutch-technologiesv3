@@ -96,7 +96,7 @@ const About = () => {
               </h2>
               <p className="mb-4 text-muted-foreground">
                 Founded with a vision to bridge the gap between cutting-edge
-                technology and practical business needs, LeafClutch Technologies
+                technology and practical business needs, Leafclutch Technologies
                 has grown into a trusted partner for organizations worldwide.
               </p>
               <p className="mb-4 text-muted-foreground">

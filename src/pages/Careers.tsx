@@ -229,7 +229,7 @@ const Careers = () => {
               viewport={{ once: true }}
               className="mb-6 text-3xl font-bold md:text-4xl"
             >
-              Why Join LeafClutch?
+              Why Join Leafclutch?
             </motion.h2>
             <motion.div
               initial={{ opacity: 0, y: 20 }}

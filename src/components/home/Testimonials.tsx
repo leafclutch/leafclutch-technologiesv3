@@ -6,21 +6,21 @@ const testimonials = [
     name: "Sarah Chen",
     role: "CTO, TechFlow Inc.",
     content:
-      "LeafClutch transformed our legacy systems with their innovative AI solutions. The team's expertise and dedication to quality exceeded our expectations.",
+      "Leafclutch transformed our legacy systems with their innovative AI solutions. The team's expertise and dedication to quality exceeded our expectations.",
     rating: 5,
   },
   {
     name: "Michael Rodriguez",
     role: "Founder, StartupXYZ",
     content:
-      "Working with LeafClutch was a game-changer for our startup. They delivered a scalable platform that has grown with us from day one.",
+      "Working with Leafclutch was a game-changer for our startup. They delivered a scalable platform that has grown with us from day one.",
     rating: 5,
   },
   {
     name: "Emily Thompson",
     role: "Operations Director, Global Corp",
     content:
-      "The automation solutions provided by LeafClutch saved us countless hours and significantly reduced operational costs. Highly recommended.",
+      "The automation solutions provided by Leafclutch saved us countless hours and significantly reduced operational costs. Highly recommended.",
     rating: 5,
   },
 ];
@@ -55,7 +55,7 @@ export function Testimonials() {
             className="text-lg text-primary-foreground/80"
           >
             Don't just take our word for it. Here's what businesses like yours
-            have experienced working with LeafClutch.
+            have experienced working with Leafclutch.
           </motion.p>
         </div>
 

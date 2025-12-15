@@ -122,7 +122,7 @@ const Jobs = () => {
               animate={{ opacity: 1, y: 0 }}
               className="mb-6 text-4xl font-bold text-foreground md:text-5xl"
             >
-              Jobs at LeafClutch
+              Jobs at Leafclutch
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}

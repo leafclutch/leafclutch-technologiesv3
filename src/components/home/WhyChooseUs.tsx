@@ -53,7 +53,7 @@ export function WhyChooseUs() {
               viewport={{ once: true }}
               className="mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-accent"
             >
-              Why LeafClutch
+              Why Leafclutch
             </motion.span>
             <motion.h2
               initial={{ opacity: 0, y: 20 }}

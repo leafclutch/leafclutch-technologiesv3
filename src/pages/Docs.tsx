@@ -1,6 +1,13 @@
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
-import { Book, Code, Wrench, Lightbulb, Search, ExternalLink } from "lucide-react";
+import {
+  Book,
+  Code,
+  Wrench,
+  Lightbulb,
+  Search,
+  ExternalLink,
+} from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -112,7 +119,7 @@ const Docs = () => {
               transition={{ delay: 0.1 }}
               className="mb-8 text-lg text-muted-foreground"
             >
-              Everything you need to integrate and build with LeafClutch
+              Everything you need to integrate and build with Leafclutch
               solutions.
             </motion.p>
             {/* Search */}
@@ -204,7 +211,9 @@ const Docs = () => {
                 <h3 className="mb-1 font-semibold text-foreground group-hover:text-accent">
                   {doc.title}
                 </h3>
-                <p className="text-sm text-muted-foreground">{doc.description}</p>
+                <p className="text-sm text-muted-foreground">
+                  {doc.description}
+                </p>
               </motion.a>
             ))}
           </div>
