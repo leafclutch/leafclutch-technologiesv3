@@ -48,6 +48,21 @@ const internships = [
       "Basic understanding of version control (Git)",
     ],
   },
+
+  {
+    title: "Full Stack Developer Internship",
+    duration: "3-6 months",
+    type: "Unpaid and Remote",
+    description:
+      "Contribute to the development of new features across the entire stack, from frontend user interfaces to backend APIs and database schemas. Work on real-world projects, fix bugs, and participate in code reviews to ensure high-quality, scalable applications.",
+    skills: [
+      "HTML, CSS, JavaScript",
+      "Familiarity with a frontend framework (e.g., React, Vue, Angular)",
+      "Experience with a backend framework (e.g., Node.js/Express, Django, Flask)",
+      "Database fundamentals (SQL or NoSQL)",
+      "Version control (Git)",
+    ],
+  },
   {
     title: "SEO Specialist Internship",
     duration: "3-6 months",
@@ -63,17 +78,17 @@ const internships = [
     ],
   },
   {
-    title: "Full Stack Developer Internship",
+    title: "UI/UX Designer Internship",
     duration: "3-6 months",
     type: "Unpaid and Remote",
     description:
-      "Contribute to the development of new features across the entire stack, from frontend user interfaces to backend APIs and database schemas. Work on real-world projects, fix bugs, and participate in code reviews to ensure high-quality, scalable applications.",
+      "Collaborate with product and development teams to design intuitive and user-friendly interfaces. You will assist in conducting user research, creating wireframes and prototypes, and iterating on designs based on feedback and testing. This role is crucial for ensuring a seamless and effective user experience across our digital products.",
     skills: [
-      "HTML, CSS, JavaScript",
-      "Familiarity with a frontend framework (e.g., React, Vue, Angular)",
-      "Experience with a backend framework (e.g., Node.js/Express, Django, Flask)",
-      "Database fundamentals (SQL or NoSQL)",
-      "Version control (Git)",
+      "Familiarity with design tools (e.g., Figma, Sketch, Adobe XD)",
+      "Understanding of fundamental UX principles (usability, accessibility, user-centered design)",
+      "Ability to create wireframes, mockups, and interactive prototypes",
+      "Basic knowledge of design systems and component libraries",
+      "Portfolio or samples demonstrating design process and visual skills",
     ],
   },
   {
