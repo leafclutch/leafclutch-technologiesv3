@@ -4,13 +4,16 @@ import {
   Target,
   Eye,
   Heart,
-  Users,
   Award,
   Lightbulb,
   Linkedin,
+  Users,
+  ArrowRight,
+  Mail,
+  Globe,
 } from "lucide-react";
-import { Mail } from "lucide-react";
-import { Globe } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const values = [
   {
@@ -36,6 +39,45 @@ const values = [
     title: "Collaborative Partnership",
     description:
       "We work alongside your team, fostering transparency and open communication throughout every project.",
+  },
+];
+
+const teamMembers = [
+  {
+    name: "Pawan Chaudhary",
+    role: "Technical & DevOps Head",
+    linkedin: "https://www.linkedin.com/in/pawan-cdhry/",
+    image: "https://i.postimg.cc/jdb4dkYK/pawan.jpg",
+  },
+  {
+    name: "Shristi karki",
+    role: "Social Media and Technical",
+    linkedin: "https://www.linkedin.com/in/shristi-karki-388122391/",
+    image: "https://i.postimg.cc/Kv2DvshM/shristi.png",
+  },
+  {
+    name: "Bijay koirala",
+    role: "Marketing Head",
+    linkedin: "https://www.linkedin.com/in/bijay-koirala-a98a0a260/",
+    image: "https://i.postimg.cc/6q7L2D5y/bijay.jpg",
+  },
+  {
+    name: "Siddhartha Pathak",
+    role: "Data Science & AI",
+    linkedin: "https://linkedin.com/in/siddharthapathak",
+    image: "https://i.postimg.cc/jdb4dkY2/siddhartha.jpg",
+  },
+  {
+    name: "Saurya Chaudhary",
+    role: "Cyber security specialist",
+    linkedin: "https://www.linkedin.com/in/saurya-chaudhary-ab680b243/",
+    image: "https://i.postimg.cc/c4SB45G6/saurya.jpg",
+  },
+  {
+    name: "Roshan Kumar Singh",
+    role: "Backend & AI",
+    linkedin: "https://www.linkedin.com/in/roshan-kumar-singh-60b68a253/",
+    image: "https://i.postimg.cc/xjgPs3zD/roshan.jpg",
   },
 ];
 
@@ -189,7 +231,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Team Section */}
+      {/* Founders Section */}
       <div className="mt-20 bg-blue-100 rounded-2xl p-16 shadow-lg mx-auto w-full max-w-2xl sm:max-w-3xl md:max-w-4xl">
         <h2 className="text-3xl font-bold text-center mb-10">Founders</h2>
         <p className="text-center text-muted-foreground mb-12">
@@ -202,16 +244,16 @@ const About = () => {
           <div className="flex flex-col items-center">
             <div className="relative w-full aspect-square mb-4 overflow-hidden">
               <img
-                src="https://media.licdn.com/dms/image/v2/D5603AQGk44uYODSrgQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1722535962639?e=1766620800&v=beta&t=BsUpPDxiQU_ovOu7pCl3fGFolXfzRJgSISESpd3jGLQ"
-                alt="photo"
-                className="relative w-full aspect-square mb-4 overflow-hidden rounded-lg"
+                src="https://i.postimg.cc/jdb4dkY2/siddhartha.jpg"
+                alt="Siddhartha Pathak"
+                className="relative w-full aspect-square mb-4 overflow-hidden rounded-lg object-cover"
               />
             </div>
             <div className="text-left w-full">
               <h3 className="text-xl font-semibold text-gray-900">
                 Siddhartha Pathak
               </h3>
-              <p className="text-gray-600"> Co - Founder & CTO</p>
+              <p className="text-gray-600">Co-Founder & CTO</p>
               <div className="flex justify-start gap-4 pt-3">
                 <a
                   href="https://mail.google.com/mail/?view=cm&fs=1&to=sid@leafclutch.dev"
@@ -221,7 +263,6 @@ const About = () => {
                 >
                   <Mail className="w-5 h-5" />
                 </a>
-
                 <a
                   href="https://linkedin.com/in/siddharthapathak"
                   target="_blank"
@@ -242,19 +283,20 @@ const About = () => {
             </div>
           </div>
 
+          {/* Shubham */}
           <div className="flex flex-col items-center">
             <div className="relative w-full aspect-square mb-4 overflow-hidden">
               <img
-                src="https://media.licdn.com/dms/image/v2/D4D03AQFO2cEDbK8ZEg/profile-displayphoto-scale_400_400/B4DZoy66_HIkAg-/0/1761790900415?e=1766620800&v=beta&t=Nrqznr0p9Y_9TPtxiyYul2OPy-0cvgI6CZXTLscAvnI"
-                alt="photo"
-                className="relative w-full aspect-square mb-4 overflow-hidden rounded-lg"
+                src="https://i.postimg.cc/pdFmjRDx/shubham.jpg"
+                alt="Shubham Kumar Deo"
+                className="relative w-full aspect-square mb-4 overflow-hidden rounded-lg object-cover"
               />
             </div>
             <div className="text-left w-full">
               <h3 className="text-xl font-semibold text-gray-900">
-                Shubham Kurmar Deo
+                Shubham Kumar Deo
               </h3>
-              <p className="text-gray-600"> Co - Founder & CEO</p>
+              <p className="text-gray-600">Co-Founder & CEO</p>
               <div className="flex justify-start gap-4 pt-3">
                 <a
                   href="https://mail.google.com/mail/?view=cm&fs=1&to=shubham@leafclutch.dev"
@@ -264,7 +306,6 @@ const About = () => {
                 >
                   <Mail className="w-5 h-5" />
                 </a>
-
                 <a
                   href="https://www.linkedin.com/in/shubham-kumar-deo-7048ab29b/"
                   target="_blank"
@@ -279,262 +320,56 @@ const About = () => {
         </div>
       </div>
 
-      {/*our team*/}
-      <div>
-        <h3 className="text-2xl font-semibold text-gray-900 mb-8 text-center pt-8">
-          {" "}
+      {/* Our Team Members Section */}
+      <section className="section-padding container-padding mx-auto max-w-7xl">
+        <h3 className="text-2xl font-semibold text-gray-900 mb-12 text-center pt-8">
           Our Team Members
         </h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="flex flex-col items-center">
-            <div className="relative w-56 h-56 mb-6 overflow-hidden">
-              <img
-                src="https://media.licdn.com/dms/image/v2/D5603AQEaaMc8rBUQAw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1727595570674?e=1767225600&v=beta&t=D0BdvqYjA4wRimhpPF3RFy2XXAWAsGEwroni_dO00DY"
-                alt="member"
-                className="w-full h-full object-cover rounded-lg"
-              />
-            </div>
-            <div className="text-center">
-              <h3 className="text-xl font-semibold text-gray-900">
-                Pawan Chaudhary
-              </h3>
-              <p className="text-gray-600 mb-2">Technical & DevOps Head</p>
-              <a
-                href="https://www.linkedin.com/in/pawan-cdhry/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-sm text-[#0077B5] hover:text-[#005582] transition-colors"
-              >
-                <svg
-                  className="w-4 h-4 mr-1"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
-                </svg>
-                LinkedIn
-              </a>
-            </div>
-          </div>
 
-          <div className="flex flex-col items-center">
-            <div className="relative w-56 h-56 mb-6 overflow-hidden">
-              <img
-                src="https://media.licdn.com/dms/image/v2/D5603AQFeJUfaYD1o7Q/profile-displayphoto-scale_400_400/B56ZpI_5FCIsAg-/0/1762161302172?e=1767225600&v=beta&t=FAailMtXwsUCEB3fL9czUilB0aJCBIisuIcbH9mg6NU"
-                alt="member"
-                className="w-full h-full object-cover rounded-lg"
-              />
-            </div>
-            <div className="text-center">
-              <h3 className="text-xl font-semibold text-gray-900">
-                Shristi karki
-              </h3>
-              <p className="text-gray-600 mb-2">Social Media and Technical</p>
-              <a
-                href="https://www.linkedin.com/in/shristi-karki-388122391/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-sm text-[#0077B5] hover:text-[#005582] transition-colors"
-              >
-                <svg
-                  className="w-4 h-4 mr-1"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
+        {/* Grid Container */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+          {teamMembers.map((member, index) => (
+            <div key={index} className="flex flex-col items-center">
+              <div className="relative w-56 h-56 mb-6 overflow-hidden">
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+              <div className="text-center">
+                <h3 className="text-xl font-semibold text-gray-900">
+                  {member.name}
+                </h3>
+                <p className="text-gray-600 mb-2">{member.role}</p>
+                <a
+                  href={member.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-sm text-[#0077B5] hover:text-[#005582] transition-colors"
                 >
-                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
-                </svg>
-                LinkedIn
-              </a>
+                  <Linkedin className="w-4 h-4 mr-1" />
+                  LinkedIn
+                </a>
+              </div>
             </div>
-          </div>
-
-          <div className="flex flex-col items-center">
-            <div className="relative w-56 h-56 mb-6 overflow-hidden">
-              <img
-                src="https://media.licdn.com/dms/image/v2/D5603AQEMm5dto6hxRQ/profile-displayphoto-scale_400_400/B56Zi8N8_BG0Ak-/0/1755504432211?e=1767225600&v=beta&t=D4mkfjw-PQG7EQB4Y-OJBdfzyLp9yZL5bUFZY0uOC2A"
-                alt="member"
-                className="w-full h-full object-cover rounded-lg"
-              />
-            </div>
-            <div className="text-center">
-              <h3 className="text-xl font-semibold text-gray-900">
-                Bijay koirala
-              </h3>
-              <p className="text-gray-600 mb-2">Marketing Head</p>
-              <a
-                href="https://www.linkedin.com/in/bijay-koirala-a98a0a260/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-sm text-[#0077B5] hover:text-[#005582] transition-colors"
-              >
-                <svg
-                  className="w-4 h-4 mr-1"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
-                </svg>
-                LinkedIn
-              </a>
-            </div>
-          </div>
-
-          <div className="flex flex-col items-center">
-            <div className="relative w-56 h-56 mb-6 overflow-hidden">
-              <img
-                src="https://media.licdn.com/dms/image/v2/D5603AQGk44uYODSrgQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1722535962639?e=1766620800&v=beta&t=BsUpPDxiQU_ovOu7pCl3fGFolXfzRJgSISESpd3jGLQ"
-                alt="member"
-                className="w-full h-full object-cover rounded-lg"
-              />
-            </div>
-            <div className="text-center">
-              <h3 className="text-xl font-semibold text-gray-900">
-                Siddhartha Pathak
-              </h3>
-              <p className="text-gray-600 mb-2">Data Science & AI</p>
-              <a
-                href="https://linkedin.com/in/siddharthapathak"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-sm text-[#0077B5] hover:text-[#005582] transition-colors"
-              >
-                <svg
-                  className="w-4 h-4 mr-1"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
-                </svg>
-                LinkedIn
-              </a>
-            </div>
-          </div>
-
-          <div className="flex flex-col items-center">
-            <div className="relative w-56 h-56 mb-6 overflow-hidden">
-              <img
-                src="https://media.licdn.com/dms/image/v2/D4D03AQHG3REB4s4w8A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1728321693866?e=1767225600&v=beta&t=3X8hLIUbiUviE-xoEI7CzYMtbKfBE3eMH6sZpWvJVo8"
-                alt="member"
-                className="w-full h-full object-cover rounded-lg"
-              />
-            </div>
-            <div className="text-center">
-              <h3 className="text-xl font-semibold text-gray-900">
-                Saurya Chaudhary
-              </h3>
-              <p className="text-gray-600 mb-2">Cyber security specialist</p>
-              <a
-                href="https://www.linkedin.com/in/saurya-chaudhary-ab680b243/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-sm text-[#0077B5] hover:text-[#005582] transition-colors"
-              >
-                <svg
-                  className="w-4 h-4 mr-1"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
-                </svg>
-                LinkedIn
-              </a>
-            </div>
-          </div> 
-
-          {/* <div className="flex flex-col items-center">
-            <div className="relative w-56 h-56 mb-6 overflow-hidden">
-              <img
-                src="https://media.licdn.com/dms/image/v2/D5603AQHKGBO2ZX9Hug/profile-displayphoto-scale_400_400/B56ZmoMDWgG0Ak-/0/1759463364586?e=1766620800&v=beta&t=JJ5sQfeQ1ncLQ500PC4F79HEt6qiHLLCG49FN-ew9Mc"
-                alt="member"
-                className="w-full h-full object-cover rounded-lg"
-              />
-            </div>
-            <div className="text-center">
-              <h3 className="text-xl font-semibold text-gray-900">
-                Guatami sinde
-              </h3>
-              <p className="text-gray-600 mb-2">AI Engineer</p>
-              <a
-                href="https://www.linkedin.com/in/geeshinde/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-sm text-[#0077B5] hover:text-[#005582] transition-colors"
-              >
-                <svg
-                  className="w-4 h-4 mr-1"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
-                </svg>
-                LinkedIn
-              </a>
-            </div>
-          </div> */}
-
-          {/* <div className="flex flex-col items-center">
-            <div className="relative w-56 h-56 mb-6 overflow-hidden">
-              <img
-                src="https://media.licdn.com/dms/image/v2/C5603AQGN7C5j017TeQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1660803242560?e=1766620800&v=beta&t=3I-NG7j0Qzb5BHOKUDQt4Grze29k-wMuxEoLQ6IZJ3A"
-                alt="member"
-                className="w-full h-full object-cover rounded-lg"
-              />
-            </div>
-            <div className="text-center">
-              <h3 className="text-xl font-semibold text-gray-900">Jason</h3>
-              <p className="text-gray-600 mb-2">
-                Vice President of Engineering
-              </p>
-              <a
-                href="https://www.linkedin.com/in/jason-p-guest/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-sm text-[#0077B5] hover:text-[#005582] transition-colors"
-              >
-                <svg
-                  className="w-4 h-4 mr-1"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
-                </svg>
-                LinkedIn
-              </a>
-            </div>
-          </div> */}
-
-          {/* <div className="flex flex-col items-center">
-            <div className="relative w-56 h-56 mb-6 overflow-hidden">
-              <img
-                src="https://media.licdn.com/dms/image/v2/D4D03AQGNdzSiD9FSCg/profile-displayphoto-scale_400_400/B4DZnr5KRwIEAg-/0/1760599256830?e=1766620800&v=beta&t=eqmdOWYEOgUr8dXWfD6bxHPXFo2-quclAxf4hwD82cs"
-                alt="member"
-                className="w-full h-full object-cover rounded-lg"
-              />
-            </div>
-            <div className="text-center">
-              <h3 className="text-xl font-semibold text-gray-900">
-                Maalik baksin
-              </h3>
-              <p className="text-gray-600 mb-2">AI Engineer</p>
-              <a
-                href="https://www.linkedin.com/in/mallika-bakshi/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-sm text-[#0077B5] hover:text-[#005582] transition-colors"
-              >
-                <svg
-                  className="w-4 h-4 mr-1"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
-                </svg>
-                LinkedIn
-              </a>
-            </div>
-          </div> */}
+          ))}
         </div>
-      </div>
+
+        {/* Action Button - Centered Below the Grid */}
+        <div className="flex justify-center mb-10 px-4">
+          <Button
+            asChild
+            variant="highlight"
+            size="lg"
+            className="w-full max-w-sm shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all font-bold border-2 border-highlight/50"
+          >
+            <Link to="/careers/intern-details">
+              Our Intern Team <ArrowRight className="ml-2 h-5 w-5" />
+            </Link>
+          </Button>
+        </div>
+      </section>
 
       {/* Core Values */}
       <section className="section-padding bg-background">
