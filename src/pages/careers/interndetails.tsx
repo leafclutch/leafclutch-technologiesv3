@@ -5,7 +5,7 @@ const internTeam = [
   {
     name: "Saina Khadka",
     role: "Frontend Intern",
-    date: "Nov 2025 – Till Date",
+    date: "Nov 29, 2025 – Till Date",
     linkedin: "https://www.linkedin.com/in/saina-khadka-433296394/",
     img: "https://i.postimg.cc/BQ0BQwfL/saina.png",
   },
