@@ -17,7 +17,6 @@ import GetStarted from "./pages/GetStarted";
 import NotFound from "./pages/NotFound";
 import Interndetails from "./pages/careers/interndetails";
 
-
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -36,11 +35,13 @@ const App = () => (
           <Route path="/careers/jobs" element={<Jobs />} />
           <Route path="/careers/internship" element={<Internship />} />
           <Route path="/careers/training" element={<Training />} />
+          {/* Use the hyphenated version to match standard URL practices */}
+          <Route path="/careers/intern-details" element={<Interndetails />} />
           <Route path="/docs" element={<Docs />} />
           <Route path="/get-started" element={<GetStarted />} />
-          <Route path="*" element={<NotFound />} />
-          <Route path="/careers/interndetails" element={<Interndetails />} />
 
+          {/* CRITICAL: The wildcard '*' MUST be the last route */}
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
