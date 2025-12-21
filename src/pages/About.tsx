@@ -57,7 +57,7 @@ const teamMembers = [
   },
   {
     name: "Bijay koirala",
-    role: "Marketing Head",
+    role: "consultant",
     linkedin: "https://www.linkedin.com/in/bijay-koirala-a98a0a260/",
     image: "https://i.postimg.cc/6q7L2D5y/bijay.jpg",
   },
