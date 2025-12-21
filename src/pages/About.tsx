@@ -79,6 +79,13 @@ const teamMembers = [
     linkedin: "https://www.linkedin.com/in/roshan-kumar-singh-60b68a253/",
     image: "https://i.postimg.cc/xjgPs3zD/roshan.jpg",
   },
+    {
+    name: "Ayush Kumar Thakur",
+    role: "Backend",
+    linkedin: "https://www.linkedin.com/in/ayush-kumar-thakur/",
+    image: "https://i.postimg.cc/xT7WSrsY/Ayush-Thakur.jpg",
+  },
+  
 ];
 
 const About = () => {
