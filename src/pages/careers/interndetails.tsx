@@ -11,7 +11,7 @@ const internTeam = [
   },
   {
     name: "Abhishek Kumar Sahani",
-    role: "Graphic Designer Intern",
+    role: "Data Analyst",
     date: "Dec 15, 2025 - Till date",
     linkedin: "https://www.linkedin.com/in/abhisheksahani4356/",
     img: "https://i.postimg.cc/sx8mT30H/abhishek.jpg",
