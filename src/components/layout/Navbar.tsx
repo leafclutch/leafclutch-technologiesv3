@@ -122,24 +122,33 @@ export function Navbar() {
                   transition={{ duration: 0.2 }}
                   className="absolute right-0 top-full mt-1 w-48 rounded-lg border border-border bg-card p-2 shadow-lg z-50"
                 >
+                  {/* Get Started (same tab) */}
                   <Link
                     to="/get-started"
                     className="block rounded-md px-3 py-2 text-sm font-medium text-muted-foreground hover:bg-muted hover:text-primary"
                   >
                     Get Started
                   </Link>
-                  <Link
-                    to="/register"
+
+                  {/* Register (new tab) */}
+                  <a
+                    href="/register"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="block rounded-md px-3 py-2 text-sm font-medium text-muted-foreground hover:bg-muted hover:text-primary"
                   >
                     Register
-                  </Link>
-                  <Link
-                    to="/login"
+                  </a>
+
+                  {/* Login (new tab) */}
+                  <a
+                    href="/login"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="block rounded-md px-3 py-2 text-sm font-medium text-muted-foreground hover:bg-muted hover:text-primary"
                   >
                     Login
-                  </Link>
+                  </a>
                 </motion.div>
               )}
             </AnimatePresence>
@@ -221,7 +230,7 @@ export function Navbar() {
                 )
               )}
 
-              {/* Mobile Get Started Dropdown */}
+              {/* Mobile Get Started */}
               <div className="mt-2 flex flex-col gap-1">
                 <Link
                   to="/get-started"
@@ -230,20 +239,22 @@ export function Navbar() {
                 >
                   Get Started
                 </Link>
-                <Link
-                  to="/register"
-                  onClick={() => setIsOpen(false)}
+                <a
+                  href="/register"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="rounded-lg px-4 py-2 text-sm font-medium text-muted-foreground hover:bg-muted hover:text-primary"
                 >
                   Register
-                </Link>
-                <Link
-                  to="/login"
-                  onClick={() => setIsOpen(false)}
+                </a>
+                <a
+                  href="/login"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="rounded-lg px-4 py-2 text-sm font-medium text-muted-foreground hover:bg-muted hover:text-primary"
                 >
                   Login
-                </Link>
+                </a>
               </div>
             </div>
           </motion.div>
@@ -252,4 +263,3 @@ export function Navbar() {
     </header>
   );
 }
-
