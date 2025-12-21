@@ -16,6 +16,8 @@ import Docs from "./pages/Docs";
 import GetStarted from "./pages/GetStarted";
 import NotFound from "./pages/NotFound";
 import Interndetails from "./pages/careers/interndetails";
+import Log from "./pages/auth/Log";
+import Register from "./pages/auth/Reg";
 
 const queryClient = new QueryClient();
 
@@ -39,6 +41,8 @@ const App = () => (
           <Route path="/careers/intern-details" element={<Interndetails />} />
           <Route path="/docs" element={<Docs />} />
           <Route path="/get-started" element={<GetStarted />} />
+          <Route path="/login" element={<Log />} />
+          <Route path="/register" element={<Register />} />
 
           {/* CRITICAL: The wildcard '*' MUST be the last route */}
           <Route path="*" element={<NotFound />} />

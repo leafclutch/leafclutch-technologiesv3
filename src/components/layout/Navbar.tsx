@@ -20,12 +20,12 @@ const navItems = [
       { name: "Training & Internship", path: "/careers/training" },
     ],
   },
-  // { name: "Docs", path: "/docs" },
 ];
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [careersOpen, setCareersOpen] = useState(false);
+  const [getStartedOpen, setGetStartedOpen] = useState(false);
   const location = useLocation();
 
   const isActive = (path: string) => location.pathname === path;
@@ -35,18 +35,15 @@ export function Navbar() {
       <nav className="container-padding mx-auto flex h-16 max-w-7xl items-center justify-between lg:h-20">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
-          {/* <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
-            <span className="text-xl font-bold text-primary-foreground">L</span>
-          </div> */}
           <img src={logo} alt="Leafclutch Technologies" className="h-12 w-15" />
-
           <span className="text-lg font-bold text-foreground lg:text-xl">
             Leafclutch Technologies<span className="text-accent">.</span>
           </span>
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden items-center gap-1 lg:flex">
+        <div className="hidden items-center gap-2 lg:flex">
+          {/* Nav Items */}
           {navItems.map((item) =>
             item.children ? (
               <div
@@ -103,13 +100,59 @@ export function Navbar() {
               </Link>
             )
           )}
-        </div>
 
-        {/* CTA Button */}
-        <div className="hidden lg:flex">
-          <Button asChild variant="hero" size="lg">
-            <Link to="/get-started">Get Started</Link>
-          </Button>
+          {/* Get Started Dropdown */}
+          <div
+            className="relative"
+            onMouseEnter={() => setGetStartedOpen(true)}
+            onMouseLeave={() => setGetStartedOpen(false)}
+          >
+            <Button asChild variant="hero" size="lg">
+              <Link to="/get-started" className="flex items-center gap-1">
+                Get Started <ChevronDown className="h-4 w-4" />
+              </Link>
+            </Button>
+
+            <AnimatePresence>
+              {getStartedOpen && (
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 10 }}
+                  transition={{ duration: 0.2 }}
+                  className="absolute right-0 top-full mt-1 w-48 rounded-lg border border-border bg-card p-2 shadow-lg z-50"
+                >
+                  {/* Get Started (same tab) */}
+                  <Link
+                    to="/get-started"
+                    className="block rounded-md px-3 py-2 text-sm font-medium text-muted-foreground hover:bg-muted hover:text-primary"
+                  >
+                    Get Started
+                  </Link>
+
+                  {/* Register (new tab) */}
+                  <a
+                    href="/register"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block rounded-md px-3 py-2 text-sm font-medium text-muted-foreground hover:bg-muted hover:text-primary"
+                  >
+                    Register
+                  </a>
+
+                  {/* Login (new tab) */}
+                  <a
+                    href="/login"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block rounded-md px-3 py-2 text-sm font-medium text-muted-foreground hover:bg-muted hover:text-primary"
+                  >
+                    Login
+                  </a>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
         </div>
 
         {/* Mobile Menu Button */}
@@ -186,12 +229,32 @@ export function Navbar() {
                   </Link>
                 )
               )}
-              <div className="mt-4">
-                <Button asChild variant="hero" className="w-full">
-                  <Link to="/get-started" onClick={() => setIsOpen(false)}>
-                    Get Started
-                  </Link>
-                </Button>
+
+              {/* Mobile Get Started */}
+              <div className="mt-2 flex flex-col gap-1">
+                <Link
+                  to="/get-started"
+                  onClick={() => setIsOpen(false)}
+                  className="rounded-lg px-4 py-2 text-sm font-medium text-muted-foreground hover:bg-muted hover:text-primary"
+                >
+                  Get Started
+                </Link>
+                <a
+                  href="/register"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-lg px-4 py-2 text-sm font-medium text-muted-foreground hover:bg-muted hover:text-primary"
+                >
+                  Register
+                </a>
+                <a
+                  href="/login"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-lg px-4 py-2 text-sm font-medium text-muted-foreground hover:bg-muted hover:text-primary"
+                >
+                  Login
+                </a>
               </div>
             </div>
           </motion.div>
