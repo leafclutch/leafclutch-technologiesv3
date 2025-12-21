@@ -81,9 +81,15 @@ const teamMembers = [
   },
     {
     name: "Ayush Kumar Thakur",
-    role: "Backend",
+    role: "MERN Stack",
     linkedin: "https://www.linkedin.com/in/ayush-kumar-thakur/",
     image: "https://i.postimg.cc/xT7WSrsY/Ayush-Thakur.jpg",
+  },
+    {
+    name: "Aniket shah",
+    role: "MERN Stack",
+    linkedin: "https://www.linkedin.com/in/aniket-sah/",
+    image: "https://i.postimg.cc/433LKBFN/aniket-shah.jpg",
   },
   
 ];
